@@ -1,0 +1,2016 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body.projectPagina{
+  width: 100vw;
+  height: 600%;
+  overflow-y: scroll;
+}
+
+body *{
+  transition: 0.3s;
+}
+
+
+/* ALGEMEEN */
+h1{
+  color: white;
+  font-family: 'Patrick Hand SC';
+  font-size: 3.5rem;
+}
+
+h1.oranje{
+  color: #E18441;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+h1.oranjePortfolio{
+  color: #E18441;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+h2{
+  color: white;
+  font-family: 'Raleway';
+  font-size: 1.5rem;
+}
+
+h3{
+  color: white;
+  font-family: 'Patrick Hand SC';
+  font-size: 2rem;
+}
+
+p{
+  color: #09727C;
+  font-family: 'Raleway';
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 80vw;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 5vw;
+}
+
+p.infoProjecten{
+  font-size: 1.5rem;
+  text-align: center;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:hover, img:hover, button:hover, a#locatie:hover img, img#mailen:hover{
+  filter: hue-rotate(180deg);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C3E5ED;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #09727C;
+}
+
+
+/* HEADER */
+div.kleur1{
+  background-color: #E18441;
+  width: 96vw;
+  height: 50vh;
+  position: absolute;
+  left: 2vw;
+  top: 2vw;
+  z-index: -900;
+  position: absolute;
+  position: relative;
+}
+
+div.kleur1 h2{
+  text-align: center;
+  padding-top: 1rem;
+}
+
+div.kleur1 h1{
+  text-align: center;
+}
+
+div.mijnfoto1{
+  width: 90vw;
+  height: 35vh;
+  background-image: url("Flore M.png");
+  background-size: cover;
+  background-position: right;
+  border-radius: 10px;
+  position: absolute;
+  top: 13vh;
+  right: -10vw;
+  animation: 1s beweging2 forwards;
+}
+
+div.mijnfoto2{
+  width: 96vw;
+  height: 35vh;
+  background-image: url("ikopfoto.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-top: 2vw;
+  margin-right: auto;
+  position: relative;
+  animation: 1s beweging2 forwards;
+}
+
+a.kleur2{
+  background-color: #C3E5ED;
+  padding: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  position: absolute;
+  left: 49vw;
+  top: 54vh;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Patrick Hand SC';
+  font-size: 2rem;
+  animation: 1s beweging forwards;
+}
+
+a.kleur3{
+  background-color: #09727C;
+  padding: 6rem;
+  position: absolute;
+  left: 8vw;
+  top: 41vh;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: 'Patrick Hand SC';
+  font-size: 2rem;
+  animation: 1s tegenbeweging forwards;
+}
+
+a.kleur5{
+  background-color: #09727C;
+  padding: 2rem;
+  position: absolute;
+  right: 8vw;
+  top: 32vh;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: 'Patrick Hand SC';
+  font-size: 2rem;
+  animation: 1s beweging forwards;
+}
+
+a.kleur6, a.kleur8{
+  background-color: #09727C;
+  padding: 3rem;
+  position: absolute;
+  left: -1rem;
+  top: 6rem;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: 'Patrick Hand SC';
+  font-size: 2rem;
+  animation: 1s tegenbeweging2 forwards;
+}
+
+a.kleur7{
+  background-color: #C3E5ED;
+  padding: 2rem;
+  padding-top: 3rem;
+  position: absolute;
+  left: 2rem;
+  top: -1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Patrick Hand SC';
+  font-size: 2rem;
+  animation: 1s tegenbeweging forwards;
+}
+
+a.kleur8{
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 2.6rem;
+  background-color: #E18441;
+  top: 14.5rem;
+}
+
+a.kleur9{
+  background-color: #E18441;
+  padding: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: absolute;
+  left: 15rem;
+  bottom: 16.8rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Patrick Hand SC';
+  font-size: 2rem;
+  animation: 1s beweging forwards;
+}
+
+a.kleur10{
+  background-color: #E18441;
+  padding: 4rem;
+  padding-right: 6rem;
+  position: absolute;
+  right: -1.5rem;
+  bottom: 10rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Patrick Hand SC';
+  font-size: 2rem;
+  animation: 1s beweging2 forwards;
+}
+
+
+/*VERSIERING*/
+.cirkel{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.bol1{
+  background-color: #C3E5ED;
+  left: 14vw;
+  top: 22rem;
+  animation: 1s tegenbeweging forwards;
+}
+
+.bol2{
+  background-color: #09727C;
+  width: 1rem;
+  height: 1rem;
+  left: 15vw;
+  top: 20rem;
+  animation: 1s tegenbeweging forwards;
+}
+
+.bol3{
+  background-color: #E18441;
+  width: 3rem;
+  height: 3rem;
+  right: 22vw;
+  top: 41rem;
+  animation: 1s beweging forwards;
+}
+
+.bol4{
+  background-color: #09727C;
+  width: 4rem;
+  height: 4rem;
+  right: 12vw;
+  top: 6rem;
+  animation: 1s beweging forwards;
+}
+
+.bol5{
+  background-color: #C3E5ED;
+  width: 1.5rem;
+  height: 1.5rem;
+  right: 7.5vw;
+  top: 7.2rem;
+  animation: 1s beweging forwards;
+}
+
+
+/* Curriculum Vitae */
+a.linkCV{
+  background-color: #E18441;
+  padding: 3rem;
+  padding-left: 4rem;
+  padding-right: 6rem;
+  position: absolute;
+  right: -2.5rem;
+  top: 13rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: 'Patrick Hand SC';
+  font-size: 2rem;
+  animation: 1s beweging2 forwards;
+}
+
+img.cv{
+  width: 90vw;
+  position: absolute;
+  top: 1rem;
+  right: -50rem;
+  z-index: 900;
+  transition: 0.5s;
+}
+
+.brengbinnen{
+  transform: translateX(-51rem);
+}
+
+img.cv:hover, div.contactgegevens img:hover{
+  filter: none;
+}
+
+a.downloadCV{
+  background-color: #09727C;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: 'Patrick Hand SC';
+  font-size: 2rem;
+  padding: 2rem;
+  position: absolute;
+  top: 107.5vw;
+  right: -49rem;
+  z-index: 900;
+}
+
+
+/* FOOTER */
+div.internetverwijzing{
+  position: fixed;
+  left: 3rem;
+  bottom: 8.5rem;
+}
+
+div.internetverwijzing a img{
+  width: 3rem;
+  display: block;
+  position: relative;
+  bottom: -6rem;
+}
+
+div.internetverwijzing a:nth-child(2) img{
+  left: 4rem;
+  bottom: -3rem;
+}
+
+div.internetverwijzing a:nth-child(3) img{
+  left: 8rem;
+  bottom: 0rem;
+}
+
+div.alleContact{
+  width: 25rem;
+  height: 35rem;
+  border-radius: 10px;
+  background-color: white;
+  border: 4px double #E18441;
+  position: fixed;
+  bottom: -28rem;
+  left: -6rem;
+  z-index: 10;
+  transition: 0.5s;
+}
+
+div.alleContact:hover{
+  transform: scale(1.1);
+}
+
+.omhoog{
+  animation: 1s contactOmhoog forwards;
+}
+
+@keyframes contactOmhoog{
+  0%{
+    transform: translate(0,0);
+  }
+  100%{
+    transform: translate(10rem,-45rem);
+  }
+}
+
+.oranjeKleur{
+  color: #E18441;
+}
+
+div.menuknop, div.sluitknop, div.dicht{
+  background-color: rgba(350,350,350,.8);
+  border: 3px solid #E18441;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  transition: 0.5s;
+}
+
+div.menuknop{
+  bottom: 1rem;
+  left: -4rem;
+  z-index: 50;
+}
+
+div.sluitknop{
+  top: -10rem;
+  right: 85vw;
+  z-index: 900;
+}
+
+div.sluitknopp2{
+  top: 2rem;
+  right: 76vw;
+}
+
+div.divknop{
+  width: 34px;
+  height: 34px;
+  transition: 0.5s;
+}
+
+div.menuknop:hover div.divknop, div.sluitknop:hover div.divknop, div.dicht:hover div.divknop{
+  transform: rotate(-180deg);
+}
+
+div.lijn1{
+  background-color: #E18441;
+  width: 25px;
+  height: 5px;
+  border-radius: 2px;
+  position: absolute;
+  top: 45%;
+  left: 4.5px;
+  transition: 0.5s;
+  transform: rotate(45deg);
+}
+
+div.lijn2{
+  background-color: #E18441;
+  width: 25px;
+  height: 5px;
+  border-radius: 2px;
+  position: absolute;
+  top: 45%;
+  left: 4.5px;
+  transition: 0.5s;
+  transform: rotate(-45deg);
+}
+
+div.contactgegevens{
+  width: 5rem;
+  display: inline;
+  position: absolute;
+  top: 7rem;
+  left: 2rem;
+}
+
+div.contactgegevens img{
+  width: 5rem;
+  display: block;
+  margin-top: 3rem;
+}
+
+div.contactgegevensInfo{
+  width: 15rem;
+  position: relative;
+  top: 5.7rem;
+  left: 9rem;
+}
+
+div.contactgegevensInfo h2{
+  margin-bottom: 2rem;
+  margin-top: 5.8rem;
+  color: #E18441;
+}
+
+.alleContact h3{
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  color: #E18441;
+}
+
+
+@keyframes beweging{
+  from {
+		transform: translate(30rem, 20rem);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes beweging2{
+  from {
+		transform: translate(30rem, 0rem);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes tegenbeweging{
+  from {
+		transform: translate(-30rem, -10rem);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes tegenbeweging2{
+  from {
+		transform: translate(-30rem, 30rem);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
+
+
+
+/* PORTFOLIO */
+div.portfolio{
+  width: 80vw;
+  height: 58vw;
+  position: relative;
+  top: 13rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(Portfolio_Flore_Pagina_01.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.pijl1 {
+  width: 7rem;
+  height: 16px;
+  position: absolute;
+  bottom: -4vh;
+  right: 3vw;
+  background: #09727C;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 0.8rem;
+  text-align: right;
+  padding-right: 5px;
+  padding-top: 2px;
+  text-transform: uppercase;
+  border: none;
+} .pijl1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 8px solid white;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+} .pijl1:before {
+  content: "";
+  position: absolute;
+  right: -8px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 8px solid #09727C;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.pijl2 {
+  width: 7rem;
+  height: 16px;
+  position: absolute;
+  bottom: -4vh;
+  left: 3vw;
+  background: #E18441;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 0.8rem;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 5px;
+  text-transform: uppercase;
+  border: none;
+} .pijl2:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 8px solid white;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+} .pijl2:before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 8px solid #E18441;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+
+
+
+/* PROJECTEN */
+body.projectPagina > header{
+  margin-bottom: 3rem;
+}
+
+body.projectPagina > header > h1{
+  font-size: 5rem;
+  color: #E18441;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+div.scrollDown{
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  position: relative;
+  animation: 1s opEnNeer infinite ease;
+  transform: scale(0.5);
+}
+
+div.scrollDown div:nth-child(1){
+  width: 8rem;
+  height: 1rem;
+  border-radius: 5px;
+  background-color: #E18441;
+  transform: rotate(45deg);
+  position: absolute;
+  left: -2.5rem;
+}
+
+div.scrollDown div:nth-child(2){
+  width: 8rem;
+  height: 1rem;
+  border-radius: 5px;
+  background-color: #E18441;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 2.5rem;
+}
+
+@keyframes opEnNeer{
+  0%{
+    transform: translate(0,0) scale(0.5);
+  }
+  50%{
+    transform: translate(0, 2.5rem) scale(0.5);
+  }
+  100%{
+    transform: translate(0,0) scale(0.5);
+  }
+}
+
+h1.projectH1{
+  color: #09727C;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+
+}
+
+h2.projectH2{
+  color: #09727C;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+div.projectOpsomming{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vh;
+  column-count: 2;
+  column-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-bottom: 15rem;
+  animation: 1s beweging2 forwards;
+}
+
+div.projectOpsomming > div{
+  background-size: cover;
+  height: 38vw;
+  filter: saturate(3);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2vw;
+}
+
+.projectOpsomming > div:hover{
+  filter: saturate(1);
+  transform: scale(1.1);
+}
+
+div.synthworld{
+  background-image: url(TypografischeCoverVK.jpg);
+}
+
+div.robuust{
+  background-image: url(Poster.png);
+  background-position: right;
+}
+
+div.thriller{
+  background-image: url(Afb1.jpg);
+}
+
+div.video{
+  background-image: url(videoCME4.png);
+}
+
+div.eigen{
+  background-image: url(Try-out_2_4.png);
+  background-position: right;
+}
+
+div.po{
+  background-image: url("PO1partytray.jpg");
+}
+
+div.h4Opsomming{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  column-count: 2;
+  column-gap: 2vw;
+}
+
+h4{
+  color: white;
+  font-family: 'Patrick Hand SC';
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  height: 8rem;
+  background-image: linear-gradient(#09727C 10%, transparent);
+}
+
+
+/* SYNTHWORLD */
+.projectSynthworld{
+  display: block;
+  margin-bottom: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 2s;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.innerSynth{
+  position: relative;
+  top: 76rem;
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px double #C3E5ED;
+  border-radius: 10px;
+  transition: 2s;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.dicht{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  right: 1vw;
+  bottom: 0;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.platen{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 2;
+  grid-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.platen div{
+  height: 38vw;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+}
+
+.platen div:nth-child(1){
+  background-image: url(TypografischeCoverVK.jpg);
+}
+
+.platen div:nth-child(1):hover{
+  background-image: url(TypografischeCoverAK.jpg);
+}
+
+.platen div:nth-child(2){
+  background-image: url(fotografischeCoverVK.jpg);
+}
+
+.platen div:nth-child(2):hover{
+  background-image: url(fotografischeCoverAK.jpg);
+}
+
+.platen div:nth-child(3){
+  background-image: url(illustratieveCoverVK.jpg);
+}
+
+.platen div:nth-child(3):hover{
+  background-image: url(illustratieveCoverAK.jpg);
+}
+
+.platen div:nth-child(4){
+  background-image: url(alternatieveCoverVK.png);
+}
+
+.platen div:nth-child(4):hover{
+  background-image: url(alternatieveCoverAK.png);
+}
+
+.evenement{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 2;
+  grid-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.evenement div{
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+}
+
+.evenement div:nth-child(1){
+  height: 48.5vw;
+  background-image: url(1718_OP2_Poster.png);
+}
+
+.evenement div:nth-child(2){
+  height: 9.5vw;
+  background-image: url(1718_OP2_Drankbonnetjes.png);
+}
+
+.evenement div:nth-child(3){
+  height: 21.5vw;
+  background-image: url(1718_OP2_Toegangsticket.png);
+}
+
+.evenement div:nth-child(4){
+  height: 13.5vw;
+  background-image: url(1718_OP2_Programmafolder_Pagina_2.png);
+}
+
+.evenement div:nth-child(4):hover{
+  background-image: url(1718_OP2_Programmafolder_Pagina_1.png);
+}
+
+
+/* ROBUUST */
+.projectRubuust{
+  display: block;
+  margin-bottom: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.innerRobuust{
+  position: relative;
+  top: 76rem;
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px double #C3E5ED;
+  border-radius: 10px;
+  transition: 2s;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.SfeerRobuust{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 2;
+  grid-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.SfeerRobuust div{
+  height: 38vw;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+}
+
+.SfeerRobuust div:nth-child(1){
+  background-image: url(Uithangbord.png);
+  background-position: right;
+}
+
+.SfeerRobuust div:nth-child(2){
+  background-image: url("Folder voorkant.png");
+  background-position: center;
+}
+
+.SfeerRobuust div:nth-child(2):hover{
+  background-image: url("Folder achterkant.png");
+}
+
+.SfeerRobuust div:nth-child(3){
+  background-image: url(RobuustWebsite.png);
+  background-position: center;
+}
+
+.SfeerRobuust div:nth-child(4){
+  background-image: url(Tote_Bag.png);
+  background-position: bottom;
+}
+
+a.downloadhuisstijlgids{
+  background-color: #09727C;
+  text-decoration: none;
+  color: white;
+  font-family: 'Patrick Hand SC';
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 20rem;
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+
+/* Thriller story */
+.projectThriller{
+  display: block;
+  margin-bottom: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.innerThriller{
+  position: relative;
+  top: 76rem;
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px double #C3E5ED;
+  border-radius: 10px;
+  transition: 2s;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.SfeerThriller{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 2;
+  column-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.SfeerThriller div{
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 5px;
+}
+
+.SfeerThriller div:nth-child(1){
+  height: 55vw;
+  background-image: url(Afb1.jpg);
+}
+
+.SfeerThriller div:nth-child(2){
+  height: 20vw;
+  background-image: url(BR01_DVDhoes.png);
+}
+
+.SfeerThriller div:nth-child(3){
+  height: 20vw;
+  background-image: url(BR01_DVD.png);
+  background-position: center;
+}
+
+.SfeerThriller div:nth-child(4){
+  height: 55vw;
+  background-image: url(PO_typo.png);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.SfeerThriller div:nth-child(5){
+  height: 40vw;
+  background-image: url(GD2_popcorn.png);
+}
+
+
+/* Video */
+.projectVideo{
+  display: block;
+  margin-bottom: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.innerVideo{
+  position: relative;
+  top: 76rem;
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px double #C3E5ED;
+  border-radius: 5px;
+  transition: 2s;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.sfeerVideo{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.sfeerVideo video{
+  margin-top: 2vw;
+  position: relative;
+  border-radius: 5px;
+}
+
+.sfeerVideo video.stopmotion{
+  width: 80vw;
+  height: 53vw;
+}
+
+.sfeerVideo video.tekstvideo{
+  width: 80vw;
+  height: 45vw;
+}
+
+.sfeerVideo video.pkp{
+  width: 50vw;
+  height: 80vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Eigen */
+.projectEigen{
+  display: block;
+  margin-bottom: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.innerEigen{
+  position: relative;
+  top: 76rem;
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px double #C3E5ED;
+  border-radius: 10px;
+  transition: 2s;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.visite{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 1;
+  grid-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.visite div{
+  height: 50vw;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+}
+
+.visite div:nth-child(1){
+  background-image: url(Kaartje_Roel2.png);
+}
+
+.visite div:nth-child(1):hover{
+  background-image: url(Kaartje_Roel1.png);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.visite div:nth-child(2){
+  background-image: url(Visitekaartje_1.png);
+}
+
+.visite div:nth-child(2):hover{
+  background-image: url(Visitekaartje_2.png);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.geboorte{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 1;
+  grid-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.geboorte div{
+  height: 38vw;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+  filter: blur(20px);
+}
+
+.geboorte div:nth-child(1){
+  background-image: url(Babykaartje_Pagina_1.png);
+}
+
+.geboorte div:nth-child(2){
+  background-image: url(Babykaartje_Pagina_2.png);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+
+.falta{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 1;
+  grid-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.falta div{
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.falta div:nth-child(1){
+  height: 112vw;
+  background-image: url(Falta_de_Tiempo.jpg);
+}
+
+.falta div:nth-child(2){
+  height: 55vw;
+  background-image: url(Falta_de_tiempo_inkomkaart.jpg);
+}
+
+
+.hivset{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 2;
+  grid-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.hivset div{
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+  height: 55vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.hivset div:nth-child(1){
+  background-image: url(Hivset_vk.png);
+}
+
+.hivset div:nth-child(2){
+  background-image: url(Hivset_spel.png);
+}
+
+
+.vrij{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 2;
+  grid-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.vrij div{
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+  height: 40vw;
+}
+
+.vrij div:nth-child(1){
+  background-image: url(Try-out_2_2.png);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.vrij div:nth-child(2){
+  background-image: url(EigenWerk1.png);
+}
+
+.vrij div:nth-child(3){
+  background-image: url(Try-out_2_3.png);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.vrij div:nth-child(4){
+  background-image: url(Logos.png);
+}
+
+
+/* Productontwikkeling */
+.projectPo{
+  display: block;
+  margin-bottom: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.innerPo{
+  position: relative;
+  top: 76rem;
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px double #C3E5ED;
+  border-radius: 10px;
+  transition: 2s;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.panos{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 2;
+  grid-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.panos div{
+  height: 40vw;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+}
+
+.panos div:nth-child(1){
+  background-image: url(PO1partytray.jpg);
+}
+
+.panos div:nth-child(2){
+  background-image: url(PO1partytray5.jpg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.relio{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 2;
+  grid-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.relio div{
+  height: 28vw;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+}
+
+.relio div:nth-child(1){
+  background-image: url(relio_render.png);
+}
+
+.relio div:nth-child(2){
+  background-image: url(relio.png);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.plastic{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 2;
+  grid-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.plastic div{
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+  height: 40vw;
+  background-position: right;
+}
+
+.plastic div:nth-child(1){
+  background-image: url(plastic_1.jpg);
+  background-position: center;
+}
+
+.plastic div:nth-child(2){
+  background-image: url(plastic_2.png);
+}
+
+.plastic div:nth-child(3){
+  background-image: url(plastic_3.png);
+}
+
+.plastic div:nth-child(4){
+  background-image: url(plastic_4.png);
+}
+
+
+.render{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  columns: 2;
+  grid-gap: 2vw;
+  grid-column-gap: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vh;
+}
+
+.render div{
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+  height: 40vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.render div:nth-child(1){
+  background-image: url(render_1.jpg);
+  background-position: center;
+}
+
+.render div:nth-child(2){
+  background-image: url(render_2.jpg);
+  background-position: right;
+}
+
+.render div:nth-child(3){
+  background-image: url(render_4.jpg);
+}
+
+.render div:nth-child(4){
+  background-image: url(render_3.jpg);
+}
+
+
+
+
+
+@supports (grid-area: auto) {
+
+  @media (min-width: 550px) {
+    p.infoProjecten{
+      font-size: 1.5rem;
+      text-align: left;
+      width: 60vw;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 2rem;
+    }
+
+    div.kleur1{
+      width: 75vw;
+      height: 70vh;
+      position: absolute;
+      left: 2vw;
+      top: 4vh;
+      z-index: -900;
+    }
+
+    div.kleur1 h2{
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+
+    div.kleur1 h1{
+      font-size: 6rem;
+    }
+
+    div.mijnfoto1{
+      width: 65vw;
+      height: 35rem;
+      left: -2rem;
+      top: 23rem;
+    }
+
+    a.kleur2{
+      font-size: 3.5rem;
+      padding: 2rem;
+      padding-left: 8rem;
+      padding-right: 8rem;
+      left: inherit;
+      right: 12vw;
+      top: 40rem;
+      z-index: 5;
+    }
+
+    a.kleur3{
+      font-size: 3.5rem;
+      padding-top: 15.8rem;
+      padding-bottom: 15.8rem;
+      left: inherit;
+      right: 2vw;
+      top: 16rem;
+    }
+
+    a.kleur9{
+      background-color: #C3E5ED;
+      left: inherit;
+      right: 2vw;
+      bottom: 9rem;
+    }
+
+    a.kleur10{
+      bottom: 5rem;
+    }
+
+    div.internetverwijzing{
+      left: 22rem;
+      top: inherit;
+      bottom: 1rem;
+    }
+
+    div.internetverwijzing a img{
+      width: 5rem;
+      display: block;
+      position: relative;
+      bottom: -10rem;
+    }
+
+    div.internetverwijzing a:nth-child(2) img{
+      left: 6rem;
+      bottom: -5rem;
+    }
+
+    div.internetverwijzing a:nth-child(3) img{
+      left: 12rem;
+      bottom: 0rem;
+    }
+
+    div.mijnfoto2{
+      height: 30rem;
+      width: 70vw;
+      position: relative;
+      left: 2rem;
+      top: 2rem;
+      margin-left: inherit;
+      margin-right: inherit;
+      margin-bottom: 2rem;
+    }
+
+    a.kleur5{
+      top: 38vh;
+    }
+
+    .bol1{
+      left: 14vw;
+      top: 19rem;
+    }
+
+    .bol2{
+      left: 11vw;
+      top: 21.5rem;
+    }
+
+    .bol3{
+      right: 42vw;
+      top: 48rem;
+    }
+
+    .bol4{
+      right: 14vw;
+      top: 10rem;
+    }
+
+    .bol5{
+      right: 13vw;
+      top: 15rem;
+    }
+
+    img.cv{
+      width: 49rem;
+    }
+
+    div.sluitknop{
+      right: 45rem;
+    }
+
+    div.sluitknopp2{
+      right: 45rem;
+    }
+
+    a.downloadCV{
+      top: 58rem;
+      right: -21.5rem;
+    }
+
+    div.portfolio{
+      width: 50rem;
+      height: 35rem;
+      background-image: url(Portfolio_Flore_Pagina_01.png);
+    }
+
+    body.projectPagina > header > h1{
+      font-size: 8rem;
+      margin-top: 5vh;
+    }
+
+    div.scrollDown{
+      margin-top: 5rem;
+      transform: scale(0.8);
+    }
+
+    @keyframes opEnNeer{
+      0%{
+        transform: translate(0,0) scale(0.8);
+      }
+      50%{
+        transform: translate(0, 2.5rem) scale(0.8);
+      }
+      100%{
+        transform: translate(0,0) scale(0.8);
+      }
+    }
+
+    div.projectOpsomming{
+      width: 90vw;
+      margin-bottom: 12rem;
+      column-count: 3;
+    }
+
+    div.projectOpsomming > div{
+      height: 28vw;
+    }
+
+    .sfeerVideo video{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .sfeerVideo video.stopmotion{
+      width: 60vw;
+      height: 40vw;
+    }
+
+    .sfeerVideo video.tekstvideo{
+      width: 60vw;
+      height: 34vw;
+    }
+
+    .sfeerVideo video.pkp{
+      width: 30vw;
+      height: 48vw;
+    }
+
+    .visite{
+      width: 80vw;
+      margin-left: auto;
+      margin-right: auto;
+      columns: 2;
+      grid-gap: 2vw;
+      margin-top: 2vw;
+      margin-bottom: 5vw;
+    }
+
+    .visite div{
+      height: 25vw;
+      background-size: cover;
+      margin-bottom: 2vw;
+      position: relative;
+      border-radius: 5px;
+    }
+
+    .falta{
+      width: 80vw;
+      columns: 2;
+      margin-bottom: 14vw;
+    }
+
+    .falta div:nth-child(1){
+      height: 55vw;
+    }
+
+    .falta div:nth-child(2){
+      height: 28vw;
+    }
+
+    .hivset{
+      width: 60vw;
+    }
+
+    .hivset div{
+      height: 40vw;
+    }
+
+    .vrij{
+      columns: 4;
+    }
+
+    .vrij div{
+      height: 18.5vw;
+    }
+
+    .vrij div:nth-child(3){
+      background-image: url(EigenWerk1.png);
+      box-shadow: none;
+    }
+
+    .vrij div:nth-child(2){
+      background-image: url(Try-out_2_3.png);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    }
+
+
+
+  }
+
+
+  @media (min-width: 1000px) {
+    p.infoProjecten{
+      width: 40vw;
+    }
+
+    div.kleur1{
+      background-color: #E18441;
+      width: 75vw;
+      height: 70vh;
+      position: absolute;
+      left: 2vw;
+      top: 2vw;
+      z-index: -900;
+    }
+
+    div.kleur1 h2{
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+
+    div.kleur1 h1{
+      font-size: 6rem;
+    }
+
+    div.mijnfoto1{
+      width: 65vw;
+      height: 43rem;
+      left: -2rem;
+      top: 15rem;
+    }
+
+    a.kleur2{
+      font-size: 3.5rem;
+      padding: 5rem;
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+      left: inherit;
+      right: 25vw;
+      top: 43rem;
+      z-index: 5;
+    }
+
+    a.kleur3{
+      font-size: 3.5rem;
+      padding: 8rem;
+      padding-left: 12rem;
+      padding-right: 12rem;
+      left: inherit;
+      right: 2vw;
+      top: 20rem;
+    }
+
+    div.mijnfoto2{
+      height: 40rem;
+      width: 50vw;
+      left: 10rem;
+      top: -6rem;
+      margin-bottom: -5rem;
+    }
+
+    a.kleur5{
+      top: 52vh;
+      right: 4vw;
+      padding: 3rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    a.kleur9{
+      padding: 2rem;
+      right: 6rem;
+      bottom: inherit;
+      top: 16rem;
+    }
+
+    h1.oranje{
+      padding-left: 7rem;
+    }
+
+    p.donkerblauw{
+      width: 55vw;
+      padding-left: 7rem;
+    }
+
+    .bol1{
+      left: inherit;
+      right: 10vw;
+      top: 38rem;
+    }
+
+    .bol2{
+      left: inherit;
+      right: 8vw;
+      top: 43rem;
+    }
+
+    .bol3{
+      right: 14vw;
+      top: 44rem;
+    }
+
+    .bol4{
+      right: inherit;
+      left: 10vw;
+      top: 12rem;
+    }
+
+    .bol5{
+      right: inherit;
+      left: 8vw;
+      top: 12rem;
+    }
+
+    div.portfolio{
+      width: 60rem;
+      height: 45rem;
+      top: 5rem;
+      background-image: url(Portfolio_Flore_Pagina_01.png);
+    }
+
+    div.scrollDown{
+      transform: scale(1);
+    }
+
+    @keyframes opEnNeer{
+      0%{
+        transform: translate(0,0) scale(1);
+      }
+      50%{
+        transform: translate(0, 2.5rem) scale(1);
+      }
+      100%{
+        transform: translate(0,0) scale(1);
+      }
+    }
+
+    div.projectOpsomming{
+      margin-bottom: 5rem;
+      column-count: 6;
+    }
+
+    div.projectOpsomming > div{
+      height: 13vw;
+    }
+
+    .platen{
+      columns: 4;
+    }
+
+    .platen div{
+      height: 18vw;
+    }
+
+    .evenement{
+      width: 60vw;
+      columns: 2;
+    }
+
+    .evenement div:nth-child(1){
+      width: 24vw;
+      height: 35vw;
+    }
+
+    .evenement div:nth-child(2){
+      height: 7vw;
+    }
+
+    .evenement div:nth-child(3){
+      height: 16vw;
+    }
+
+    .evenement div:nth-child(4){
+      height: 21vw;
+      column-span: all;
+      margin-top: 5rem;
+    }
+
+    .SfeerRobuust{
+      columns: 4;
+    }
+
+    .SfeerRobuust div{
+      height: 18.5vw;
+    }
+
+    .SfeerRobuust div:nth-child(1){
+      background-image: url(Uithangbord.png);
+      background-position: center;
+    }
+
+    a.downloadhuisstijlgids{
+      margin-top: -6rem;
+    }
+
+    .SfeerThriller{
+      width: 60vw;
+      margin-left: auto;
+      margin-right: auto;
+      columns: 2;
+      grid-gap: 2vw;
+      margin-top: 2vw;
+      margin-bottom: 5vw;
+    }
+
+    .SfeerThriller div:nth-child(1){
+      height: 40vw;
+      background-image: url(Afb1.jpg);
+    }
+
+    .SfeerThriller div:nth-child(2){
+      height: 15vw;
+      background-image: url(BR01_DVDhoes.png);
+    }
+
+    .SfeerThriller div:nth-child(3){
+      height: 15vw;
+      background-image: url(BR01_DVD.png);
+      background-position: center;
+    }
+
+    .SfeerThriller div:nth-child(4){
+      height: 40vw;
+      background-image: url(PO_typo.png);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .SfeerThriller div:nth-child(5){
+      height: 30vw;
+      background-image: url(GD2_popcorn.png);
+    }
+
+    .sfeerVideo video.stopmotion{
+        width: 54rem;
+        height: 36rem;
+      }
+
+    .sfeerVideo video.tekstvideo{
+      width: 54rem;
+      height: 31rem;
+    }
+
+    .sfeerVideo video.pkp{
+      width: 34rem;
+      height: 54rem;
+    }
+
+    .falta{
+      width: 60vw;
+      columns: 2;
+      margin-bottom: 14vw;
+    }
+
+    .falta div:nth-child(1){
+      height: 41vw;
+    }
+
+    .falta div:nth-child(2){
+      height: 20vw;
+    }
+
+    .panos{
+      width: 60vw;
+    }
+
+    .panos div{
+      height: 29vw;
+    }
+
+    .plastic{
+      columns: 4;
+    }
+
+    .plastic div{
+      height: 18vw;
+    }
+
+    .render{
+      columns: 4;
+    }
+
+    .render div{
+      height: 18vw;
+    }
+
+
+
+  }
+
+}
