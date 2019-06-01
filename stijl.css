@@ -845,27 +845,27 @@ h4{
 }
 
 .platen div:nth-child(2){
-  background-image: url(fotografischeCoverVK.jpg);
+  background-image: url(FotografischeCoverVK.jpg);
 }
 
 .platen div:nth-child(2):hover{
-  background-image: url(fotografischeCoverAK.jpg);
+  background-image: url(FotografischeCoverAK.jpg);
 }
 
 .platen div:nth-child(3){
-  background-image: url(illustratieveCoverVK.jpg);
+  background-image: url(IllustratieveCoverVK.jpg);
 }
 
 .platen div:nth-child(3):hover{
-  background-image: url(illustratieveCoverAK.jpg);
+  background-image: url(IllustratieveCoverAK.jpg);
 }
 
 .platen div:nth-child(4){
-  background-image: url(alternatieveCoverVK.png);
+  background-image: url(AlternatieveCoverVK.png);
 }
 
 .platen div:nth-child(4):hover{
-  background-image: url(alternatieveCoverAK.png);
+  background-image: url(AlternatieveCoverAK.png);
 }
 
 .evenement{
@@ -1434,21 +1434,21 @@ a.downloadhuisstijlgids{
 }
 
 .render div:nth-child(1){
-  background-image: url(render_1.jpg);
+  background-image: url(render1.jpg);
   background-position: center;
 }
 
 .render div:nth-child(2){
-  background-image: url(render_2.jpg);
+  background-image: url(render2.jpg);
   background-position: right;
 }
 
 .render div:nth-child(3){
-  background-image: url(render_4.jpg);
+  background-image: url(render4.jpg);
 }
 
 .render div:nth-child(4){
-  background-image: url(render_3.jpg);
+  background-image: url(render3.jpg);
 }
 
 
